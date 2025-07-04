@@ -5,7 +5,7 @@
 <!-- Mirrored from preview.colorlib.com/theme/coffeeblend/cart.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Apr 2021 16:32:50 GMT -->
 
 <head>
-  <title>HealthStack</title>
+  <title>Surco Salud</title>
   <!-- Favicons -->
   <link
   type="image/x-icon"
@@ -36,7 +36,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-      <a class="navbar-brand" href="">Health Stack<small>Medical Shop</small>
+      <a class="navbar-brand" href="">Surco Salud<small>Tienda</small>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
         aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,7 +44,7 @@
       </button>
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item"><a href="{% url 'patient-dashboard'%}" class="nav-link">Dashboard</a></li>
+          <li class="nav-item"><a href="{% url 'patient-dashboard'%}" class="nav-link">Panel</a></li>
           <li class="nav-item"><a href="{% url 'pharmacy_shop' %}"class="nav-link">Shop</a></li>
           <!-- <li class="nav-item"><a href="{% url 'cart' %}" class="nav-link">Cart</a></li> -->
           <!-- <li class="nav-item"><a href="{% url 'checkout' %}" class="nav-link">Checkout</a></li> -->
@@ -70,9 +70,9 @@
               <thead class="thead-primary">
                 <tr class="text-center">
                   <th>&nbsp;</th>
-                  <th>Product</th>
-                  <th>Price</th>
-                  <th>Quantity</th>
+                  <th>Producto</th>
+                  <th>Precio</th>
+                  <th>Cantidad</th>
                   <th>Total</th>
                 </tr>
               </thead>
@@ -118,7 +118,7 @@
       <div class="row justify-content-end">
         <div class="col col-lg-3 col-md-6 mt-5 cart-wrap ftco-animate">
           <div class="cart-total mb-3">
-            <h3>Cart Totals</h3>
+            <h3>Totales del carrito</h3>
             <p class="d-flex">
               <span>Subtotal</span>
               <span>{{ order.get_totals | floatformat:2 }} BDT</span>
@@ -128,7 +128,7 @@
               <span> 40.00 BDT</span>
             </p>
             <p class="d-flex">
-              <span>Discount</span>
+              <span>Descuento</span>
               <span> 0.00 BDT</span>
             </p>
             <hr>
@@ -138,7 +138,7 @@
             </p>
           
           </div>
-          <p class="text-center"><a href="{% url 'ssl-payment-request-medicine' pk=order.user.patient.patient_id id=order.id %}" class="btn btn-primary py-3 px-4">Proceed to Checkout</a></p>
+          <p class="text-center"><a href="{% url 'ssl-payment-request-medicine' pk=order.user.patient.patient_id id=order.id %}" class="btn btn-primary py-3 px-4">Pasar por la caja</a></p>
         </div>
       </div>
     </div>
@@ -149,12 +149,11 @@
       <div class="row mb-5">
         <div class="col-lg-6 col-md-6 mb-5 mb-md-5">
           <div class="ftco-footer-widget mb-8">
-            <h2 class="ftco-heading-2">About Us</h2>
-            <p>Healthstack is an online based platform for multiple hospitals. 
-              It Provides immediate medical assistance to patients who require emergency treatment. 
-              Its Ability to track, monitor, and share a patient's health records between all hospitals
-              . Patients can also see information regarding multiple hospitals and doctors and make 
-              appointments online.
+            <h2 class="ftco-heading-2">Sobre nosotros</h2>
+            <p>Policlinico Surco salud es una plataforma en línea para múltiples Policlinicos.
+Brinda asistencia médica inmediata a pacientes que requieren tratamiento de emergencia.
+Permite rastrear, monitorear y compartir el historial médico de un paciente entre todos los Policlinicos.
+Los pacientes también pueden consultar información sobre múltiples Policlinicos y médicos, y programar citas en línea.
             </p>
 
           </div>
@@ -162,7 +161,7 @@
         
         <div class="col-lg-3 col-md-6 mb-5 mb-md-5">
           <div class="ftco-footer-widget mb-4">
-            <h2 class="ftco-heading-2">Have a Questions?</h2>
+            <h2 class="ftco-heading-2">Tiene una preguntas?</h2>
             <div class="block-23 mb-3">
               <ul>
                 <li><span class="icon icon-map-marker"></span><span class="text">Dhanmondi, Dhaka, Bangladesh.</span></li>

@@ -91,22 +91,22 @@
 					  <li class="has-submenu">
 						<a href="#">Patients <i class="fas fa-chevron-down"></i></a>
 						<ul class="submenu">
-						  <li><a href="{% url 'search'%}">Search Doctor</a></li>
-						  <li><a href="{% url 'doctor-profile'%}">Doctor Profile</a></li>
+						  <li><a href="{% url 'search'%}">Buscar Doctor</a></li>
+						  <li><a href="{% url 'doctor-profile'%}">Perfil Doctor</a></li>
 						  <li><a href="{% url 'booking'%}">Booking</a></li>
 						  <!-- <li><a href="#">Checkout</a></li> -->
-						  <li><a href="{% url 'booking-success'%}">Booking Success</a></li>
+						  <li><a href="{% url 'booking-success'%}">Reservas realizadas correctamente</a></li>
 						  <li>
-							<a href="{% url 'patient-dashboard'%}">Patient Dashboard</a>
+							<a href="{% url 'patient-dashboard'%}">Panel de control del paciente</a>
 						  </li>
 						  <!-- <li><a href="#">Favourites</a></li> -->
 						  <!-- <li><a href="#">Chat</a></li> -->
-						  <li><a href="{% url 'profile-settings'%}">Profile Settings</a></li>
-						  <li><a href="{% url 'change-password'%}">Change Password</a></li>
+						  <li><a href="{% url 'profile-settings'%}">Configuración del perfil</a></li>
+						  <li><a href="{% url 'change-password'%}">Cambiar contraseña</a></li>
 						</ul>
 					  </li>
 					  <li>
-						<a href="{% url 'about-us'%}">About Us</a>
+						<a href="{% url 'about-us'%}">Sobre nosotros</a>
 					  </li>
 					  <!-- <li class="has-submenu">
 						<a href="#">Pages <i class="fas fa-chevron-down"></i></a>
@@ -133,7 +133,7 @@
 						<a href="{% url 'admin_login' %}" target="_blank">Admin</a>
 					  </li>
 					  <li class="login-link">
-						<a href="{% url 'login' %}">Login / Signup</a>
+						<a href="{% url 'login' %}">Iniciar sesión / Registrarse</a>
 					  </li>
 					</ul>
 				  </div>
@@ -143,8 +143,8 @@
 						<i class="far fa-hospital"></i>
 					  </div>
 					  <div class="header-contact-detail">
-						<p class="contact-header">Contact</p>
-						<p class="contact-info-header">+880 1795087285</p>
+						<p class="contact-header">Contacto</p>
+						<p class="contact-info-header">+51 1795087285</p>
 					  </div>
 					</li>
 					<!-- User Menu -->
@@ -165,9 +165,9 @@
 									<p class="text-muted mb-0">Patient</p>
 								</div>
 							</div>
-							<a class="dropdown-item" href="{% url 'patient-dashboard'%}">Dashboard</a>
-							<a class="dropdown-item" href="{% url 'profile-settings'%}">Profile Settings</a>
-							<a class="dropdown-item" href="{% url 'hospital_home'%}">Logout</a>
+							<a class="dropdown-item" href="{% url 'patient-dashboard'%}">Panel de control</a>
+							<a class="dropdown-item" href="{% url 'profile-settings'%}">Configuración del perfil</a>
+							<a class="dropdown-item" href="{% url 'hospital_home'%}">Cerrar sesión</a>
 						</div>
 					</li>
 					<!-- /User Menu -->
@@ -183,11 +183,11 @@
 						<div class="col-md-12 col-12">
 							<nav aria-label="breadcrumb" class="page-breadcrumb">
 								<ol class="breadcrumb">
-									<li class="breadcrumb-item"><a href="index-2.html">Home</a></li>
-									<li class="breadcrumb-item active" aria-current="page">Hospitals</li>
+									<li class="breadcrumb-item"><a href="index-2.html">Inicio</a></li>
+									<li class="breadcrumb-item active" aria-current="page">Policlinicos</li>
 								</ol>
 							</nav>
-							<h2 class="breadcrumb-title">Hospitals</h2>
+							<h2 class="breadcrumb-title">Policlinicos</h2>
 						</div>
 					</div>
 				</div>
@@ -211,7 +211,7 @@
 											<h3>Jhordy Samaniego</h3>
 											<div class="patient-details">
 												<h5><i class="fas fa-birthday-cake"></i> 24 Jul 1983, 38 years</h5>
-												<h5 class="mb-0"><i class="fas fa-map-marker-alt"></i> Newyork, USA</h5>
+												<h5 class="mb-0"><i class="fas fa-map-marker-alt"></i> Lima, PE</h5>
 											</div>
 										</div>
 									</div>
@@ -241,25 +241,25 @@
 											<li>
 												<a href="{% url 'search'%}">
 													<i class="fas fa-user-md"></i>
-													<span>Search Doctor</span>
+													<span>Buscar Doctor</span>
 												</a>
 											</li>
 											<li>
 												<a href="{% url 'profile-settings'%}">
 													<i class="fas fa-user-cog"></i>
-													<span>Profile Settings</span>
+													<span>Configuración del perfil</span>
 												</a>
 											</li>
 											<li>
 												<a href="{% url 'change-password'%}">
 													<i class="fas fa-lock"></i>
-													<span>Change Password</span>
+													<span>Cambiar contraseña</span>
 												</a>
 											</li>
 											<li>
 												<a href="{% url 'hospital_home'%}">
 													<i class="fas fa-sign-out-alt"></i>
-													<span>Logout</span>
+													<span>Cerrar sesión</span>
 												</a>
 											</li>
 										</ul>
@@ -275,7 +275,7 @@
 							<section class="wrapper">
 								<div class="container-fostrap">
 									<div>
-										<h1>All Hospitals</h1>
+										<h1>Todos los Policlinicos</h1>
 									</div>
 									<div class="content">
 										<div class="container">
@@ -452,11 +452,11 @@
 								<div class="footer-widget footer-menu">
 									<h2 class="footer-title">For Patients</h2>
 									<ul>
-										<li><a href="search.html"><i class="fas fa-angle-double-right"></i> Search for Doctors</a></li>
-										<li><a href="login.html"><i class="fas fa-angle-double-right"></i> Login</a></li>
-										<li><a href="register.html"><i class="fas fa-angle-double-right"></i> Register</a></li>
-										<li><a href="booking.html"><i class="fas fa-angle-double-right"></i> Booking</a></li>
-										<li><a href="patient-dashboard.html"><i class="fas fa-angle-double-right"></i> Patient Dashboard</a></li>
+										<li><a href="search.html"><i class="fas fa-angle-double-right"></i> Búsqueda de médicos</a></li>
+										<li><a href="login.html"><i class="fas fa-angle-double-right"></i> Acceso</a></li>
+										<li><a href="register.html"><i class="fas fa-angle-double-right"></i> Registro</a></li>
+										<li><a href="booking.html"><i class="fas fa-angle-double-right"></i> Reserva</a></li>
+										<li><a href="patient-dashboard.html"><i class="fas fa-angle-double-right"></i> Panel de control del paciente</a></li>
 									</ul>
 								</div>
 								<!-- /Footer Widget -->
@@ -469,11 +469,11 @@
 								<div class="footer-widget footer-menu">
 									<h2 class="footer-title">For Doctors</h2>
 									<ul>
-										<li><a href="appointments.html"><i class="fas fa-angle-double-right"></i> Appointments</a></li>
-										<li><a href="chat.html"><i class="fas fa-angle-double-right"></i> Chat</a></li>
-										<li><a href="login.html"><i class="fas fa-angle-double-right"></i> Login</a></li>
-										<li><a href="doctor-register.html"><i class="fas fa-angle-double-right"></i> Register</a></li>
-										<li><a href="doctor-dashboard.html"><i class="fas fa-angle-double-right"></i> Doctor Dashboard</a></li>
+										<li><a href="appointments.html"><i class="fas fa-angle-double-right"></i> Equipo</a></li>
+										<li><a href="chat.html"><i class="fas fa-angle-double-right"></i> Chat-IA Medico</a></li>
+										<li><a href="login.html"><i class="fas fa-angle-double-right"></i> Acceso</a></li>
+										<li><a href="doctor-register.html"><i class="fas fa-angle-double-right"></i> Registro</a></li>
+										<li><a href="doctor-dashboard.html"><i class="fas fa-angle-double-right"></i> Panel de control del médico</a></li>
 									</ul>
 								</div>
 								<!-- /Footer Widget -->
@@ -518,7 +518,7 @@
 							<div class="row">
 								<div class="col-md-6 col-lg-6">
 									<div class="copyright-text">
-										<p class="mb-0"><a href="templateshub.net">Templates Hub</a></p>
+										<p class="mb-0"><a href="templateshub.net">Centro de plantillas</a></p>
 									</div>
 								</div>
 								<div class="col-md-6 col-lg-6">
@@ -526,8 +526,8 @@
 									<!-- Copyright Menu -->
 									<div class="copyright-menu">
 										<ul class="policy-menu">
-											<li><a href="term-condition.html">Terms and Conditions</a></li>
-											<li><a href="privacy-policy.html">Policy</a></li>
+											<li><a href="term-condition.html">Términos y condiciones</a></li>
+											<li><a href="privacy-policy.html">Política</a></li>
 										</ul>
 									</div>
 									<!-- /Copyright Menu -->

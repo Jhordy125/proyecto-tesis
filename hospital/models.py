@@ -64,7 +64,7 @@ class Patient(models.Model):
     email = models.EmailField(max_length=200, null=True, blank=True)
     phone_number = models.IntegerField(null=True, blank=True)
     address = models.CharField(max_length=200, null=True, blank=True)
-    featured_image = models.ImageField(upload_to='patients/', default='patients/user-default.png', null=True, blank=True)
+    featured_image = models.ImageField(upload_to='patients/avatars/', null=True, blank=True)
     blood_group = models.CharField(max_length=200, null=True, blank=True)
     history = models.CharField(max_length=200, null=True, blank=True)
     dob = models.CharField(max_length=200, null=True, blank=True)

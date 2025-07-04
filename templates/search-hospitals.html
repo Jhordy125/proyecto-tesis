@@ -8,7 +8,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, user-scalable=0"
     />
-    <title>HealthStack</title>
+    <title>Surco Salud</title>
 
     <!-- Favicons -->
     <link
@@ -100,22 +100,22 @@
             </div>
             <ul class="main-nav">
               <li>
-                <a href="{% url 'hospital_home'%}">Home</a>
+                <a href="{% url 'hospital_home'%}">Inicio</a>
               </li>
               <li class="has-submenu active">
-                <a href="#">Doctors <i class="fas fa-chevron-down"></i></a>
+                <a href="#">Doctores <i class="fas fa-chevron-down"></i></a>
                 <ul class="submenu">
-                  <li><a href="#">Doctor Dashboard</a></li>
-                  <li><a href="{% url 'appointments'%}">Appointments</a></li>
+                  <li><a href="#">Panel médico</a></li>
+                  <li><a href="{% url 'appointments'%}">Equipo</a></li>
                   <li>
-                    <a href="{% url 'schedule-timings'%}">Schedule Timing</a>
+                    <a href="{% url 'schedule-timings'%}">Programar tiempo</a>
                   </li>
-                  <li><a href="{% url 'my-patients'%}">Patients List</a></li>
-                  <li><a href="#">Patients Profile</a></li>
+                  <li><a href="{% url 'my-patients'%}">Lista de pacientes</a></li>
+                  <li><a href="#">Perfil de los pacientes</a></li>
                   <!-- <li><a href="#">Chat</a></li>
 						  <li><a href="#">Invoices</a></li> -->
                   <li>
-                    <a href="#">Profile Settings</a>
+                    <a href="#">Configuración de perfil</a>
                   </li>
                   <!-- <li><a href="reviews.html">Reviews</a></li> -->
                   <!-- <li class="active">
@@ -124,28 +124,28 @@
                 </ul>
               </li>
               <li class="has-submenu">
-                <a href="#">Patients <i class="fas fa-chevron-down"></i></a>
+                <a href="#">Pacientes <i class="fas fa-chevron-down"></i></a>
                 <ul class="submenu">
-                  <li><a href="{% url 'search'%}">Search Doctor</a></li>
+                  <li><a href="{% url 'search'%}">Perfil del médico</a></li>
                   <li><a href="#">Doctor Profile</a></li>
-                  <li><a href="{% url 'booking'%}">Booking</a></li>
+                  <li><a href="{% url 'booking'%}">Reserva</a></li>
                   <!-- <li><a href="#">Checkout</a></li> -->
                   <li>
-                    <a href="{% url 'booking-success'%}">Booking Success</a>
+                    <a href="{% url 'booking-success'%}">Reserva exitosa</a>
                   </li>
                   <li>
-                    <a href="#">Patient Dashboard</a>
+                    <a href="#">Panel de control del paciente</a>
                   </li>
                   <!-- <li><a href="#">Favourites</a></li> -->
                   <!-- <li><a href="#">Chat</a></li> -->
-                  <li><a href="#">Profile Settings</a></li>
+                  <li><a href="#">Configuración de perfil</a></li>
                   <li>
-                    <a href="{% url 'change-password'%}">Change Password</a>
+                    <a href="{% url 'change-password'%}">Cambiar la contraseña</a>
                   </li>
                 </ul>
               </li>
               <li>
-                <a href="{% url 'about-us'%}">About Us</a>
+                <a href="{% url 'about-us'%}">De Nsotros</a>
               </li>
               <!-- <li class="has-submenu">
 						<a href="#">Pages <i class="fas fa-chevron-down"></i></a>
@@ -172,7 +172,7 @@
                 <a href="{% url 'admin_login' %}" target="_blank">Admin</a>
               </li>
               <li class="login-link">
-                <a href="{% url 'login' %}">Login / Signup</a>
+                <a href="{% url 'login' %}">Iniciar sesión / Registrarse</a>
               </li>
             </ul>
           </div>
@@ -182,8 +182,8 @@
                 <i class="far fa-hospital"></i>
               </div>
               <div class="header-contact-detail">
-                <p class="contact-header">Contact</p>
-                <p class="contact-info-header">+880 1795087285</p>
+                <p class="contact-header">Contacto</p>
+                <p class="contact-info-header">+51 1795087285</p>
               </div>
             </li>
             <!-- User Menu -->
@@ -213,13 +213,13 @@
                   </div>
                   <div class="user-text">
                     <h6>Jhordy Samaniego</h6>
-                    <p class="text-muted mb-0">Patient</p>
+                    <p class="text-muted mb-0">Paciente</p>
                   </div>
                 </div>
-                <a class="dropdown-item" href="#">Dashboard</a>
-                <a class="dropdown-item" href="#">Profile Settings</a>
+                <a class="dropdown-item" href="#">Panel</a>
+                <a class="dropdown-item" href="#">Configuración de perfil</a>
                 <a class="dropdown-item" href="{% url 'hospital_home'%}"
-                  >Logout</a
+                  >Cerrar sesión</a
                 >
               </div>
             </li>
@@ -237,14 +237,14 @@
               <nav aria-label="breadcrumb" class="page-breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item">
-                    <a href="index-2.html">Home</a>
+                    <a href="index-2.html">Inicio</a>
                   </li>
                   <li class="breadcrumb-item active" aria-current="page">
-                    Search Doctor
+                    Buscar doctor
                   </li>
                 </ol>
               </nav>
-              <h2 class="breadcrumb-title">Search Doctor</h2>
+              <h2 class="breadcrumb-title">Buscar doctor</h2>
             </div>
             <!-- <div class="col-md-4 col-12 d-md-block d-none">
 							<div class="sort-by">
@@ -273,7 +273,7 @@
               <!-- Search Filter -->
               <div class="card search-filter">
                 <div class="card-header">
-                  <h4 class="card-title mb-0">Search Filter</h4>
+                  <h4 class="card-title mb-0">Filtro de búsqueda</h4>
                 </div>
                 <div class="card-body">
                   <div class="filter-widget">
@@ -286,22 +286,22 @@
                     </div>
                   </div>
                   <div class="filter-widget">
-                    <h4>Gender</h4>
+                    <h4>Género</h4>
                     <div>
                       <label class="custom_check">
                         <input type="checkbox" name="gender_type" checked />
-                        <span class="checkmark"></span> Male Doctor
+                        <span class="checkmark"></span> Doctor masculino
                       </label>
                     </div>
                     <div>
                       <label class="custom_check">
                         <input type="checkbox" name="gender_type" />
-                        <span class="checkmark"></span> Female Doctor
+                        <span class="checkmark"></span> Doctora
                       </label>
                     </div>
                   </div>
                   <div class="filter-widget">
-                    <h4>Select Specialist</h4>
+                    <h4>Seleccionar especialista</h4>
                     <div>
                       <label class="custom_check">
                         <input
@@ -309,7 +309,7 @@
                           name="select_specialist"
                           checked
                         />
-                        <span class="checkmark"></span> Urology
+                        <span class="checkmark"></span> Urología
                       </label>
                     </div>
                     <div>
@@ -319,36 +319,36 @@
                           name="select_specialist"
                           checked
                         />
-                        <span class="checkmark"></span> Neurology
+                        <span class="checkmark"></span> Neurología
                       </label>
                     </div>
                     <div>
                       <label class="custom_check">
                         <input type="checkbox" name="select_specialist" />
-                        <span class="checkmark"></span> Dentist
+                        <span class="checkmark"></span> Dentista
                       </label>
                     </div>
                     <div>
                       <label class="custom_check">
                         <input type="checkbox" name="select_specialist" />
-                        <span class="checkmark"></span> Orthopedic
+                        <span class="checkmark"></span> Ortopedico
                       </label>
                     </div>
                     <div>
                       <label class="custom_check">
                         <input type="checkbox" name="select_specialist" />
-                        <span class="checkmark"></span> Cardiologist
+                        <span class="checkmark"></span> Cardiólogo
                       </label>
                     </div>
                     <div>
                       <label class="custom_check">
                         <input type="checkbox" name="select_specialist" />
-                        <span class="checkmark"></span> Cardiologist
+                        <span class="checkmark"></span> Cardiólogo
                       </label>
                     </div>
                   </div>
                   <div class="btn-search">
-                    <button type="button" class="btn btn-block">Search</button>
+                    <button type="button" class="btn btn-block">Buscar</button>
                   </div>
                 </div>
               </div>
@@ -358,7 +358,7 @@
                   <li class="active">
                     <a href="#">
                       <i class="fas fa-columns"></i>
-                      <span>Dashboard</span>
+                      <span>Panel</span>
                     </a>
                   </li>
                   <!-- <li>
@@ -377,25 +377,25 @@
                   <li>
                     <a href="{% url 'search'%}">
                       <i class="fas fa-user-md"></i>
-                      <span>Search Doctor</span>
+                      <span>Buscar doctor</span>
                     </a>
                   </li>
                   <li>
                     <a href="#">
                       <i class="fas fa-user-cog"></i>
-                      <span>Profile Settings</span>
+                      <span>Configuración de perfil</span>
                     </a>
                   </li>
                   <li>
                     <a href="{% url 'change-password'%}">
                       <i class="fas fa-lock"></i>
-                      <span>Change Password</span>
+                      <span>Cambiar la contraseña</span>
                     </a>
                   </li>
                   <li>
                     <a href="{% url 'hospital_home'%}">
                       <i class="fas fa-sign-out-alt"></i>
-                      <span>Logout</span>
+                      <span>Cerrar sesión</span>
                     </a>
                   </li>
                 </ul>
@@ -443,7 +443,7 @@
                         </div>
                         <div class="clinic-details">
                           <p class="doc-location">
-                            <i class="fas fa-map-marker-alt"></i> Florida, USA
+                            <i class="fas fa-map-marker-alt"></i> Lima, Pe
                           </p>
                           <ul class="clinic-gallery">
                             <li>
@@ -493,8 +493,8 @@
                           </ul>
                         </div>
                         <div class="clinic-services">
-                          <span>Dental Fillings</span>
-                          <span> Whitneing</span>
+                          <span>Empastes dentales</span>
+                          <span> Blanqueo</span>
                         </div>
                       </div>
                     </div>

@@ -424,17 +424,20 @@ def my_patients(request):
 @csrf_exempt
 @login_required(login_url="doctor-login")
 def patient_profile(request, pk):
-    if request.user.is_doctor:
-        # doctor = Doctor_Information.objects.get(user_id=pk)
-        doctor = Doctor_Information.objects.get(user=request.user)
-        patient = Patient.objects.get(patient_id=pk)
-        appointments = Appointment.objects.filter(doctor=doctor).filter(patient=patient)
-        prescription = Prescription.objects.filter(doctor=doctor).filter(patient=patient)
-        report = Report.objects.filter(doctor=doctor).filter(patient=patient) 
+    patient = get_object_or_404(Patient, pk=pk)
+
+    if request.method == 'POST':
+        form = PatientForm(request.POST, request.FILES, instance=patient)
+        if form.is_valid():
+            form.save()
+            return redirect('patient-detail', pk=patient.pk)
     else:
-        redirect('doctor-logout')
-    context = {'doctor': doctor, 'appointments': appointments, 'patient': patient, 'prescription': prescription, 'report': report}  
-    return render(request, 'patient-profile.html', context)
+        form = PatientForm(instance=patient)
+
+    return render(request, 'patients/profile_form.html', {
+        'form': form,
+        'patient': patient
+    })
 
 
 @csrf_exempt

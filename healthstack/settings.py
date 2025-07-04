@@ -113,11 +113,11 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_DIRS = [BASE_DIR / 'static']
 # Permitir archivos faltantes del manifest para desarrollo\ nWHITENOISE_MANIFEST_STRICT = False
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
-
+WHITENOISE_MANIFEST_STRICT = False
+WHITENOISE_AUTOREFRESH = True
 # Media files
 MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
-
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # SSLCOMMERZ env variables
 STORE_ID = env('STORE_ID')
 STORE_PASSWORD = env('STORE_PASSWORD')
